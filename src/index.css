@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-body;
+        @apply text-shark-300;
+    }
+
+    body {
+        @apply bg-shark-900;
+    }
+}
