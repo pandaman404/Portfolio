@@ -8,8 +8,8 @@ export default {
             screens: {
                 sm: '100%',
                 md: '100%',
-                lg: '1024px',
-                xl: '1200px',
+                lg: '800px',
+                xl: '1000px',
             },
         },
         extend: {
@@ -40,6 +40,9 @@ export default {
                     900: '#4b05ad',
                     950: '#2c0076',
                 },
+            },
+            spacing: {
+                navbar: '75px',
             },
         },
     },

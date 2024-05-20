@@ -1,3 +1,7 @@
-export const Layout = ({ children, style }) => {
-    return <div className={`container relative flex ${style}`}>{children}</div>;
+export const Layout = ({ children }) => {
+    return (
+        <main className='mt-navbar container flex flex-col text-wrap break-words px-8 lg:mt-0'>
+            {children}
+        </main>
+    );
 };

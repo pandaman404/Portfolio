@@ -1,9 +1,8 @@
-import {
-    BriefcaseIcon,
-    BuildingOffice2Icon,
-    Square3Stack3DIcon,
-    UserIcon,
-} from '@heroicons/react/24/outline';
+import { MdOutlinePersonOutline } from 'react-icons/md';
+import { FaRegBuilding } from 'react-icons/fa';
+import { ImStack } from 'react-icons/im';
+import { IoIosBriefcase } from 'react-icons/io';
+
 import links from '../info';
 
 export const Menu = ({ showMenu }) => {
@@ -20,19 +19,24 @@ export const Menu = ({ showMenu }) => {
                             href={`#${section}`}
                             aria-label={name}
                             aria-current='page'
-                            className='lg:hover:bg-shark-500 group relative flex items-center justify-center gap-2 rounded lg:h-10 lg:w-10'
+                            className='group relative flex items-center justify-center gap-3 rounded lg:h-10 lg:w-10 lg:hover:bg-shark-500'
                         >
                             {section === 'about' ? (
-                                <UserIcon className='h-5 w-5 stroke-shark-400 lg:h-6 lg:w-6' />
+                                <MdOutlinePersonOutline
+                                    size={25}
+                                    fill='#9E9EA7'
+                                />
                             ) : section === 'experience' ? (
-                                <BuildingOffice2Icon className=' h-5 w-5 stroke-shark-400 lg:h-6 lg:w-6' />
+                                <FaRegBuilding size={25} fill='#9E9EA7' />
                             ) : section === 'stack' ? (
-                                <Square3Stack3DIcon className='h-5 w-5 stroke-shark-400 lg:h-6 lg:w-6' />
+                                <ImStack size={25} fill='#9E9EA7' />
                             ) : (
-                                <BriefcaseIcon className='h-5 w-5 stroke-shark-400 lg:h-6 lg:w-6' />
+                                <IoIosBriefcase size={25} fill='#9E9EA7' />
                             )}
-                            <span className='lg:hidden'>{name}</span>
-                            <div className='invisible absolute left-12 hidden w-auto min-w-full transform whitespace-nowrap rounded bg-shark-200 px-2 py-1 text-xs font-medium text-shark-900 transition-all ease-in-out group-hover:visible lg:block'>
+                            <span className='text-shark-100 lg:hidden'>
+                                {name}
+                            </span>
+                            <div className='invisible absolute left-12 hidden w-auto min-w-full transform whitespace-nowrap rounded bg-shark-200 px-2 py-1 text-xs font-semibold text-shark-900 transition-all ease-in-out group-hover:visible lg:block'>
                                 {name}
                             </div>
                         </a>
