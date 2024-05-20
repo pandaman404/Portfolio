@@ -1,11 +1,15 @@
 const links = [
     {
-        name: 'Inicio',
-        section: 'home',
+        name: 'Sobre mi',
+        section: 'about',
     },
     {
         name: 'Experiencia',
         section: 'experience',
+    },
+    {
+        name: 'Stack',
+        section: 'stack',
     },
     {
         name: 'Proyectos',
