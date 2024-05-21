@@ -5,7 +5,7 @@ import { Education } from './Education';
 
 export const Resume = () => {
     return (
-        <section>
+        <section id='curriculum'>
             <h3 className='mb-10 text-2xl font-semibold uppercase tracking-widest text-shark-200'>
                 Experiencia
             </h3>

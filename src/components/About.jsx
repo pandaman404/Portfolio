@@ -7,7 +7,10 @@ import { RxDownload } from 'react-icons/rx';
 
 export const About = () => {
     return (
-        <section className='flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-20'>
+        <section
+            id='about'
+            className='flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-20'
+        >
             <div className='h-60 w-60 overflow-hidden rounded-full border-[5px] border-lime-400 lg:order-2 lg:h-72 lg:w-72'>
                 <img
                     src={FotoPerfil}
