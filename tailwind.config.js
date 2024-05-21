@@ -9,7 +9,7 @@ export default {
                 sm: '100%',
                 md: '100%',
                 lg: '800px',
-                xl: '1000px',
+                xl: '900px',
             },
         },
         extend: {

@@ -3,7 +3,7 @@ import { FaRegBuilding } from 'react-icons/fa';
 import { ImStack } from 'react-icons/im';
 import { IoIosBriefcase } from 'react-icons/io';
 
-import links from '../info';
+import { links } from '../info';
 
 export const Menu = ({ showMenu }) => {
     return (

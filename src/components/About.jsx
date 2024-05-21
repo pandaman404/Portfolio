@@ -6,7 +6,7 @@ import { FaEnvelope } from 'react-icons/fa';
 
 export const About = () => {
     return (
-        <section className='lg:items- mt-20 flex flex-col items-center gap-8 lg:flex-row lg:justify-center lg:gap-20'>
+        <section className='lg:items- mt-20 flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-20'>
             <div className='h-60 w-60 overflow-hidden rounded-full border-[5px] border-lime-400 lg:order-2 lg:h-72 lg:w-72'>
                 <img
                     src={FotoPerfil}
@@ -22,14 +22,14 @@ export const About = () => {
                     <span className='text-lime-500'>Full Stack</span> Developer
                     <span className='text-shark-400'>_</span>
                 </h2>
-                <p className='mb-2 text-lg text-shark-400'>
+                <p className='mb-2 text-shark-400'>
                     Ingeniero Civil en informática con{' '}
                     <span className='text-shark-100'>
                         +3 años de experiencia
                     </span>{' '}
                     dedicado al desarrollo web.
                 </p>
-                <p className='mb-7 text-lg text-shark-400'>
+                <p className='mb-7 text-shark-400'>
                     Me apasiona crear aplicaciones web limpias y fáciles de
                     usar. Enfocado en{' '}
                     <span className='text-shark-100'>React y Node.js</span>.
