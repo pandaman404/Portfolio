@@ -1,6 +1,5 @@
 import { MdOutlinePersonOutline } from 'react-icons/md';
 import { FaRegBuilding } from 'react-icons/fa';
-import { ImStack } from 'react-icons/im';
 import { IoIosBriefcase } from 'react-icons/io';
 
 import { links } from '../info';
@@ -23,15 +22,13 @@ export const Menu = ({ showMenu }) => {
                         >
                             {section === 'about' ? (
                                 <MdOutlinePersonOutline
-                                    size={25}
+                                    size={24}
                                     fill='#9E9EA7'
                                 />
-                            ) : section === 'experience' ? (
-                                <FaRegBuilding size={25} fill='#9E9EA7' />
-                            ) : section === 'stack' ? (
-                                <ImStack size={25} fill='#9E9EA7' />
+                            ) : section === 'curriculum' ? (
+                                <FaRegBuilding size={24} fill='#9E9EA7' />
                             ) : (
-                                <IoIosBriefcase size={25} fill='#9E9EA7' />
+                                <IoIosBriefcase size={24} fill='#9E9EA7' />
                             )}
                             <span className='text-shark-100 lg:hidden'>
                                 {name}

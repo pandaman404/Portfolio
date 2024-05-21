@@ -18,7 +18,7 @@ export default {
                 body: ['Manrope', 'sans-serif'],
             },
             colors: {
-                'shark': {
+                shark: {
                     100: '#f8f8f8',
                     200: '#EEEEEE',
                     300: '#D4D4D8',
@@ -26,19 +26,6 @@ export default {
                     500: '#3c3f4480',
                     800: '#18181B',
                     900: '#0e0e11',
-                },
-                'purple-heart': {
-                    50: '#f3f1ff',
-                    100: '#ebe5ff',
-                    200: '#d9ceff',
-                    300: '#bea6ff',
-                    400: '#9f75ff',
-                    500: '#843dff',
-                    600: '#7916ff',
-                    700: '#6b04fd',
-                    800: '#5a03d5',
-                    900: '#4b05ad',
-                    950: '#2c0076',
                 },
             },
             spacing: {
