@@ -4,6 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaEnvelope } from 'react-icons/fa';
 import { RxDownload } from 'react-icons/rx';
+import { externalLinks } from '../info';
 
 export const About = () => {
     return (
@@ -36,19 +37,39 @@ export const About = () => {
                 <p className='mb-7 text-shark-400'>
                     Me apasiona crear aplicaciones web limpias y fáciles de
                     usar. Mi stack de tecnologías incluye{' '}
-                    <a href='#' className='text-shark-100'>
+                    <a
+                        href='https://es.react.dev/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-shark-100'
+                    >
                         React
                     </a>
                     ,{' '}
-                    <a href='#' className='text-shark-100'>
+                    <a
+                        href='https://nodejs.org/en'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-shark-100'
+                    >
                         Node.js
                     </a>
                     ,{' '}
-                    <a href='#' className='text-shark-100'>
+                    <a
+                        href='https://www.mysql.com/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-shark-100'
+                    >
                         SQL
                     </a>
                     ,{' '}
-                    <a href='#' className='text-shark-100'>
+                    <a
+                        href='#'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-shark-100'
+                    >
                         Sprint Boot
                     </a>
                     , entre otros.
@@ -57,21 +78,42 @@ export const About = () => {
                     id='social'
                     className='flex flex-wrap items-center justify-start gap-5'
                 >
-                    <a href='#'>
-                        <FaEnvelope size={25} fill='#9E9EA7' />
-                    </a>
-                    <a href='#'>
-                        <PiLinkedinLogoBold size={25} fill='#9E9EA7' />
-                    </a>
-                    <a href='#'>
-                        <AiFillGithub size={25} fill='#9E9EA7' />
-                    </a>
-                    <a href='#'>
-                        <FaWhatsapp size={25} fill='#9E9EA7' />
-                    </a>
+                    {externalLinks.map(({ name, url }) => {
+                        return (
+                            <a
+                                href={url}
+                                aria-label={name}
+                                key={name}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                {name === 'Linkedin' ? (
+                                    <PiLinkedinLogoBold
+                                        size={25}
+                                        className='fill-shark-400 transition-all hover:fill-shark-200'
+                                    />
+                                ) : name === 'Github' ? (
+                                    <AiFillGithub
+                                        size={25}
+                                        className='fill-shark-400 transition-all hover:fill-shark-200'
+                                    />
+                                ) : name === 'WhatsApp' ? (
+                                    <FaWhatsapp
+                                        size={25}
+                                        className='fill-shark-400 transition-all hover:fill-shark-200'
+                                    />
+                                ) : (
+                                    <FaEnvelope
+                                        size={25}
+                                        className='fill-shark-400 transition-all hover:fill-shark-200'
+                                    />
+                                )}
+                            </a>
+                        );
+                    })}
 
-                    <button className='flex items-center gap-2 rounded border border-shark-500 px-5 py-2 text-sm text-shark-400'>
-                        <RxDownload size={20} fill='#9E9EA7' />
+                    <button className='flex items-center gap-2 rounded border border-shark-500 px-5 py-2 text-sm text-shark-400 transition-all hover:bg-shark-500 hover:text-shark-200'>
+                        <RxDownload size={20} className='fill-shark-400' />
                         Descargar CV
                     </button>
                 </div>

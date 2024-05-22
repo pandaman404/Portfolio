@@ -13,6 +13,25 @@ export const links = [
     },
 ];
 
+export const externalLinks = [
+    {
+        name: 'valenzuela.ahumada4@gmail.com',
+        url: 'mailto: valenzuela.ahumada4@gmail.com',
+    },
+    {
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/rodrigo-valenzuela-466b0021a',
+    },
+    {
+        name: 'Github',
+        url: 'https://github.com/pandaman404',
+    },
+    {
+        name: 'WhatsApp',
+        url: 'https://wa.me/+56988822311',
+    },
+];
+
 export const jobs = [
     {
         period: 'Ago. 2020 - Ene. 2021',
