@@ -7,13 +7,13 @@ export const Job = ({ period, position, company, bulletPoints }) => {
             <div className='absolute -left-[37px] top-0 h-4 w-4 rounded-full bg-lime-500'></div>
             <div className='relative -top-2'>
                 <div className='mb-5 grid md:grid-cols-2 md:grid-rows-2'>
-                    <h4 className='text-lg text-shark-400 md:col-start-2 md:col-end-3 md:text-end'>
+                    <h4 className='text-theme-400 text-lg md:col-start-2 md:col-end-3 md:text-end'>
                         {period}
                     </h4>
                     <h4 className='text-lg font-semibold text-lime-500'>
                         {position}
                     </h4>
-                    <h4 className='text-lg font-semibold text-shark-200 md:row-start-1 md:row-end-2'>
+                    <h4 className='text-theme-200 text-lg font-semibold md:row-start-1 md:row-end-2'>
                         {company}
                     </h4>
                 </div>
@@ -22,7 +22,7 @@ export const Job = ({ period, position, company, bulletPoints }) => {
                         return (
                             <li
                                 key={uuidv4()}
-                                className='relative left-5 text-sm text-shark-400'
+                                className='text-theme-400 relative left-5 text-sm'
                             >
                                 <FaCheck
                                     className='absolute -left-5 top-1'

@@ -18,7 +18,7 @@ export default {
                 body: ['Manrope', 'sans-serif'],
             },
             colors: {
-                shark: {
+                theme: {
                     100: '#f8f8f8',
                     200: '#EEEEEE',
                     300: '#D4D4D8',
