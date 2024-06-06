@@ -5,14 +5,14 @@ import { Resume } from './components/Resume';
 import { Projects } from './components/Projects';
 
 export const App = () => {
-    return (
-        <>
-            <Navbar />
-            <Layout>
-                <About />
-                <Resume />
-                <Projects />
-            </Layout>
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Layout>
+        <About />
+        <Resume />
+        <Projects />
+      </Layout>
+    </>
+  );
 };
