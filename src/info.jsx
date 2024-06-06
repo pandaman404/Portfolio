@@ -1,3 +1,7 @@
+import image1 from './assets/dentist.webp';
+import image2 from './assets/chair.webp';
+import image3 from './assets/truck.webp';
+
 export const links = [
   {
     name: 'Sobre mi',
@@ -43,7 +47,7 @@ export const jobs = [
   },
   {
     period: 'Feb. 2021 - Jun. 2021',
-    position: 'Desarrollador Wordpress',
+    position: 'Desarrollador WordPress',
     company: 'Freelance',
     bulletPoints: [
       'Renové el diseño de diversos sitios web de emprendimientos en Chile, basándome en requerimientos de alto nivel proporcionados por los clientes.',
@@ -86,5 +90,23 @@ export const education = [
     period: '2024',
     major: 'Bootcamp Desarrollo Full Stack JavaScript ',
     institution: 'Desafío LATAM',
+  },
+];
+
+export const freelanceWorkList = [
+  {
+    src: image1,
+    title: 'Ortodontik',
+    url: 'https://ortodontik.cl/',
+  },
+  {
+    src: image2,
+    title: 'Mofisillas',
+    url: 'https://mofisillas.cl/',
+  },
+  {
+    src: image3,
+    title: 'DMF Express',
+    url: 'https://dmfexpress.cl/',
   },
 ];

@@ -40,6 +40,9 @@ export default {
       animation: {
         fadeIn: 'fadeIn 300ms ease-in-out',
       },
+      gridTemplateColumns: {
+        'auto-fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
+      },
     },
   },
   plugins: [],
