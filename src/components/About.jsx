@@ -12,7 +12,7 @@ export const About = () => {
       id='about'
       className='flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-20'
     >
-      <div className='h-60 w-60 overflow-hidden rounded-full border-[5px] border-lime-400 lg:order-2 lg:h-72 lg:w-72'>
+      <div className='h-60 w-60 overflow-hidden rounded-full border-[5px] border-lime-300 lg:order-2 lg:h-72 lg:w-72'>
         <img
           src={FotoPerfil}
           alt='Foto perfil'
@@ -24,7 +24,7 @@ export const About = () => {
           Hola! soy Rodrigo
         </h1>
         <h2 className='mb-5 text-2xl font-black leading-tight text-theme-400'>
-          <span className='text-lime-500'>Full Stack</span> Developer
+          <span className='text-lime-300'>Full Stack</span> Developer
           <span className='text-theme-400'>_</span>
         </h2>
         <p className='mb-2 text-theme-400'>

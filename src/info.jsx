@@ -1,6 +1,8 @@
-import image1 from './assets/dentist.webp';
-import image2 from './assets/chair.webp';
-import image3 from './assets/truck.webp';
+import freelance1 from './assets/dentist.webp';
+import freelance2 from './assets/chair.webp';
+import freelance3 from './assets/truck.webp';
+import project1 from './assets/countries-app.webp';
+import project2 from './assets/landing-page.webp';
 
 export const links = [
   {
@@ -95,18 +97,40 @@ export const education = [
 
 export const freelanceWorkList = [
   {
-    src: image1,
+    src: freelance1,
     title: 'Ortodontik',
     url: 'https://ortodontik.cl/',
   },
   {
-    src: image2,
+    src: freelance2,
     title: 'Mofisillas',
     url: 'https://mofisillas.cl/',
   },
   {
-    src: image3,
+    src: freelance3,
     title: 'DMF Express',
     url: 'https://dmfexpress.cl/',
+  },
+];
+
+export const FeaturedProjectsList = [
+  {
+    year: '2023',
+    type: 'Web App',
+    src: project1,
+    title: 'Countries App',
+    description:
+      'Pagina Web que consume una API de paises, incluye buscador por paises, filtros por continente, navegación entre paises vecinos y darkmode.',
+    url: 'https://pandaman404.github.io/rest-countries-spa/',
+    tags: ['React', 'Redux', 'Styled Components'],
+  },
+  {
+    year: '2023',
+    type: 'Landing Page',
+    src: project2,
+    title: 'Url Shortening Landing',
+    description: 'Landing Page que incluye un acortador de links.',
+    url: 'https://url-shortening-landing-lilac.vercel.app/',
+    tags: ['Next', 'Tailwind'],
   },
 ];

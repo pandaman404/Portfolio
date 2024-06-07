@@ -8,7 +8,7 @@ export const Education = ({ period, major, institution }) => {
         <p className='text font-semibold text-theme-200 sm:row-start-1 sm:row-end-2'>
           {major}
         </p>
-        <p className='text font-semibold text-lime-500'>{institution}</p>
+        <p className='text font-semibold text-lime-300'>{institution}</p>
       </div>
     </div>
   );
