@@ -23,9 +23,9 @@ export const About = () => {
         <h1 className='text-carbon-100 mb-1 text-5xl font-black leading-tight'>
           Hola! soy Rodrigo
         </h1>
-        <h2 className='text-carbon-400 mb-5 text-2xl font-black leading-tight'>
+        <h2 className='text-carbon-100 mb-5 text-2xl font-black leading-tight'>
           <span className='text-razer'>Full Stack</span> Developer
-          <span className='text-carbon-400'>_</span>
+          <span className='text-carbon-100 animate-cursor'>_</span>
         </h2>
         <p className='text-carbon-400 mb-2'>
           Ingeniero Civil en informática con{' '}

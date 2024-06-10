@@ -40,6 +40,16 @@ export default {
       },
       animation: {
         fadeIn: 'fadeIn 300ms ease-in-out',
+        cursor: 'cursor 1s infinite;',
+      },
+      keyframes: {
+        cursor: {
+          '0%': { opacity: 0 },
+          '40%': { opacity: 0 },
+          '50%': { opacity: 1 },
+          '90%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
       },
       gridTemplateColumns: {
         'auto-fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
