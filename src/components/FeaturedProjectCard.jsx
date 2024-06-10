@@ -14,18 +14,18 @@ export const FeaturedProjectCard = ({
       href={url}
       target='_blank'
       rel='noopener noreferrer'
-      className='group flex min-h-64 cursor-crosshair flex-col justify-between overflow-hidden rounded-md border border-theme-500 bg-theme-800 md:flex-row'
+      className='border-carbon-500 bg-carbon-800 group flex min-h-64 cursor-pointer flex-col justify-between overflow-hidden rounded-md border md:flex-row'
     >
       <div className='p-5 md:w-1/2'>
         <span className='mb-1 text-sm'>
           {year} • {type}
         </span>
-        <h6 className='mb-3 text-xl font-bold text-theme-100'>{title}</h6>
+        <h6 className='text-carbon-100 mb-3 text-xl font-bold'>{title}</h6>
         <div className='mb-3 flex gap-2'>
           {tags.map((tag) => (
             <p
               key={uuidv4()}
-              className='rounded-xl border border-theme-400 px-3 py-1 text-xs'
+              className='border-carbon-400 rounded-xl border px-3 py-1 text-xs'
             >
               {tag}
             </p>

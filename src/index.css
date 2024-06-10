@@ -5,11 +5,11 @@
 
 @layer base {
   * {
-    @apply font-body text-theme-300;
+    @apply text-carbon-300 font-body;
   }
 
   body {
-    @apply min-h-screen bg-theme-900;
+    @apply bg-carbon-900 min-h-screen;
   }
 
   #menu {
@@ -33,12 +33,12 @@
 
   #menu a:hover::after {
     content: attr(aria-label);
-    @apply absolute left-12 animate-fadeIn whitespace-nowrap rounded bg-theme-200 px-2 py-1 text-xs font-semibold text-theme-900;
+    @apply bg-carbon-200 text-carbon-900 absolute left-12 animate-fadeIn whitespace-nowrap rounded px-2 py-1 text-xs font-semibold;
   }
 
   #social a:hover::after {
     content: attr(aria-label);
-    @apply absolute -bottom-9 left-2/4 -translate-x-1/2 animate-fadeIn whitespace-nowrap rounded bg-theme-200 px-2 py-1 text-xs font-semibold text-theme-900;
+    @apply bg-carbon-200 text-carbon-900 absolute -bottom-9 left-2/4 -translate-x-1/2 animate-fadeIn whitespace-nowrap rounded px-2 py-1 text-xs font-semibold;
   }
 }
 

@@ -18,7 +18,7 @@ export default {
         body: ['Manrope', 'sans-serif'],
       },
       colors: {
-        theme: {
+        carbon: {
           100: '#f8f8f8',
           200: '#EEEEEE',
           300: '#D4D4D8',
@@ -27,6 +27,7 @@ export default {
           800: '#18181B',
           900: '#0e0e11',
         },
+        razer: '#00fe60',
       },
       spacing: {
         navbar: '75px',

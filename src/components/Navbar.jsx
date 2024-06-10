@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <nav
       id='navbar'
-      className='fixed top-0 z-20 flex w-full justify-between border-b border-r border-theme-500 bg-theme-800 px-5 py-4 lg:h-screen lg:max-w-[73px] lg:flex-col lg:justify-center lg:border-b-0'
+      className='border-carbon-500 bg-carbon-800 fixed top-0 z-20 flex w-full justify-between border-b border-r px-5 py-4 lg:h-screen lg:max-w-[73px] lg:flex-col lg:justify-center lg:border-b-0'
     >
       <span className='lg:absolute lg:top-5'>
         <Logo />

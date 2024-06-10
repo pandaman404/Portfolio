@@ -50,7 +50,7 @@ export const Menu = ({ showMenu, toggleMenu }) => {
       id='menu'
       ref={ulRef}
       onClick={scrollToSection}
-      className={`${showMenu && 'open'} fixed right-0 top-0 flex h-screen w-full flex-col items-start gap-10 bg-theme-800 px-12 pt-56 lg:relative lg:h-auto lg:w-auto lg:gap-8 lg:p-0`}
+      className={`${showMenu && 'open'} bg-carbon-800 fixed right-0 top-0 flex h-screen w-full flex-col items-start gap-10 px-12 pt-56 lg:relative lg:h-auto lg:w-auto lg:gap-8 lg:p-0`}
     >
       {links.map((link) => {
         const { name, section } = link;
@@ -60,25 +60,25 @@ export const Menu = ({ showMenu, toggleMenu }) => {
               href={`#${section}`}
               aria-label={name}
               aria-current='page'
-              className='group relative flex items-center justify-center gap-3 rounded transition-all lg:h-10 lg:w-10 lg:hover:bg-theme-500'
+              className='lg:hover:bg-carbon-500 group relative flex items-center justify-center gap-3 rounded transition-all lg:h-10 lg:w-10'
             >
               {section === 'about' ? (
                 <MdOutlinePersonOutline
-                  className='pointer-events-none fill-theme-400 transition-all group-hover:fill-theme-200'
+                  className='fill-carbon-400 group-hover:fill-carbon-200 pointer-events-none transition-all'
                   size={24}
                 />
               ) : section === 'curriculum' ? (
                 <FaRegBuilding
                   size={24}
-                  className='pointer-events-none fill-theme-400 transition-all group-hover:fill-theme-200'
+                  className='fill-carbon-400 group-hover:fill-carbon-200 pointer-events-none transition-all'
                 />
               ) : (
                 <IoIosBriefcase
                   size={24}
-                  className='pointer-events-none fill-theme-400 transition-all group-hover:fill-theme-200'
+                  className='fill-carbon-400 group-hover:fill-carbon-200 pointer-events-none transition-all'
                 />
               )}
-              <span className='pointer-events-none text-theme-100 transition-all group-hover:fill-theme-200 lg:hidden'>
+              <span className='text-carbon-100 group-hover:fill-carbon-200 pointer-events-none transition-all lg:hidden'>
                 {name}
               </span>
             </a>

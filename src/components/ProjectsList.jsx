@@ -7,7 +7,7 @@ export const ProjectsList = () => {
     <section id='projects'>
       <div className='flex flex-col gap-20'>
         <div>
-          <h3 className='mb-10 text-2xl font-semibold uppercase tracking-widest text-theme-200'>
+          <h3 className='text-carbon-200 mb-10 text-2xl font-semibold uppercase tracking-widest'>
             Freelance
           </h3>
           <div className='grid grid-cols-auto-fit-200 gap-8'>
@@ -17,7 +17,7 @@ export const ProjectsList = () => {
           </div>
         </div>
         <div>
-          <h3 className='mb-10 text-2xl font-semibold uppercase tracking-widest text-theme-200'>
+          <h3 className='text-carbon-200 mb-10 text-2xl font-semibold uppercase tracking-widest'>
             Proyectos
           </h3>
           <div className='flex flex-col gap-10'>
