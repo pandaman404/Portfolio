@@ -1,4 +1,5 @@
 import FotoPerfil from '../assets/foto_perfil.webp';
+import resume from '../assets/resume.pdf';
 import { PiLinkedinLogoBold } from 'react-icons/pi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
@@ -76,10 +77,14 @@ export const About = () => {
           id='social'
           className='flex flex-wrap items-center justify-start gap-5'
         >
-          <button className='border-carbon-500 text-carbon-400 hover:bg-carbon-500 hover:text-carbon-200 flex items-center gap-2 rounded border px-5 py-2 text-sm transition-all'>
+          <a
+            href={resume}
+            download={true}
+            className='border-carbon-500 text-carbon-400 hover:bg-carbon-500 hover:text-carbon-200 flex cursor-pointer items-center gap-2 rounded border px-5 py-2 text-sm transition-all'
+          >
             <RxDownload size={20} className='fill-carbon-400' />
             Descargar CV
-          </button>
+          </a>
           {externalLinks.map(({ name, url }) => {
             return (
               <a
